@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-hv*2uz02e88m^mt5^3@v$0o=@-jpe00qj&d$gp+637(mgw7!^j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','127.0.0.1', 'recuerdo.azurewebsites.net']
 
 
 # Application definition
@@ -80,6 +80,16 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     "default": {
+#        "ENGINE": "django.db.backends.postgresql",
+#        "NAME": "postgres",
+#        "USER": "recuerdame",
+#        "PASSWORD": "Lina12345678",
+#         "HOST": "recuerdame.postgres.database.azure.com",
+#         "PORT": "5432",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
