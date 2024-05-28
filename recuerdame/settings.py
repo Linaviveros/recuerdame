@@ -23,12 +23,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-hv*2uz02e88m^mt5^3@v$0o=@-jpe00qj&d$gp+637(mgw7!^j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost','127.0.0.1', 'recuerdo.azurewebsites.net']
 
 
 # Application definition
+
+# Configuración de cookies seguras
+CSRF_COOKIE_SECURE = True  # Solo envía la cookie CSRF sobre HTTPS
+SESSION_COOKIE_SECURE = True  # Solo envía cookies de sesión sobre HTTPS
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
